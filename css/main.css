@@ -114,3 +114,23 @@ nav .avatar {
 .banner img {
     margin-right: 35px;
 }
+
+.large-category img, .medium-category img, .small-category img {
+   height: 32px;
+   width: 15px; 
+}
+
+.large-category h4 {
+    font-size: 24px;
+    margin-left: 8px;
+}
+ 
+ .medium-category h5 {
+     font-size: 22px;
+     margin-left: 8px;
+ }
+
+ .small-category h6 {
+    font-size: 16px;
+    margin-left: 8px;
+ }
