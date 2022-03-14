@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar flex bg-white items-center" role="navigation">
+        <a href="/">
+            <img src="assets/Oscarin_Logo.png" alt="" class="logo">
+        </a>
+        
+        <ul class="flex">
+            <li class="active">
+                <a href="">Mi quiniela</a> 
+            </li>
+            <li>
+                <a href="">Ranking</a>
+            </li>
+            <li>
+                <a href="">Reglas</a>
+            </li>
+        </ul>
+        <article class="ml-auto flex">
+            <button class="flex share-button">
+                <img src="assets/send.png" alt="" class="icon">   
+                <span>Compartir</span>
+            </button>
+           
+                <sec:ifLoggedIn>
+                    <a href="views/user.html" class="flex">
+                        <img src="http://placekitten.com/g/200/300" alt="" class="avatar rounded-full">
+                        <span class="capitalize">@user</span>
+                        
+                    </a>
+                    <o:avatar />
+                </sec:ifLoggedIn>
+
+           
+             <!--
+            <sec:ifNotLoggedIn>
+                <twitterAuth:button />
+                <button class="flex">
+                    <img src="assets/twitter.svg" alt="" class="icon">
+                    <span>Iniciar sesión</span>
+                </button>
+            </sec:ifNotLoggedIn>
+             -->
+            
+        </article>
+       
+        
+    </nav>
+    <div class="banner text-white flex">
+        <img src="assets/Oscar.svg" alt="oscar">
+        <article>
+            <h3 class="font-bold">Bienvenido al Oscarin</h3>
+            <p class="font-semibold">Oscarin.mx es una quiniela organizada entre amigos para la entrega de los Premios Óscar 2022. Para participar, inicia sesión con tu cuenta de Twitter, selecciona tus candidatos, y no te olvides de revisar el reglamento.</p>
+        </article>
+        
+    </div>
+
+    
+    <div class="flex flex-col">
+        <a href="views/auth.html">auth</a>
+        <a href="views/index.html">Index</a>
+       
+    </div>
+    
+</body>
+</html>
+	
+		
