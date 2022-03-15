@@ -115,6 +115,10 @@ nav .avatar {
     margin-right: 35px;
 }
 
+.large-category {
+    margin-bottom: 20px;
+}
+
 .large-category img, .medium-category img, .small-category img {
    height: 32px;
    width: 15px; 
@@ -124,13 +128,44 @@ nav .avatar {
     font-size: 24px;
     margin-left: 8px;
 }
- 
- .medium-category h5 {
+
+.large-card {
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    font-family: Quicksand;
+    font-size: 14px;
+    text-align: center;
+    width: 195px;
+}
+
+.large-card img {
+    border-radius: 10px 10px 0 0;
+    height: 283px;
+}
+
+.large-card div {
+    height: 32px;
+    border-radius: 0 0 10px 10px;
+}
+
+.medium-category h5 {
      font-size: 22px;
      margin-left: 8px;
  }
 
- .small-category h6 {
+.small-category h6 {
     font-size: 16px;
     margin-left: 8px;
- }
+}
+
+.large-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 18px;
+}
+
+main {
+    margin-top: 40px;
+    max-width: 1100px;
+
+}

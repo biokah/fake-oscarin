@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,16 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="navbar flex bg-white items-center" role="navigation">
         <a href="/">
             <img src="assets/Oscarin_Logo.png" alt="" class="logo">
         </a>
-        
+
         <ul class="flex">
             <li class="active">
-                <a href="">Mi quiniela</a> 
+                <a href="">Mi quiniela</a>
             </li>
             <li>
                 <a href="views/ranking.html">Ranking</a>
@@ -33,18 +35,18 @@
                 <img src="assets/send.png" alt="" class="icon">   
                 <span>Compartir</span>
             </button>
-           
-                <sec:ifLoggedIn>
-                    <a href="views/user.html" class="flex">
-                        <img src="http://placekitten.com/g/200/300" alt="" class="avatar rounded-full">
-                        <span class="capitalize">@user</span>
-                        
-                    </a>
-                    <o:avatar />
-                </sec:ifLoggedIn>
 
-           
-             <!--
+            <sec:ifLoggedIn>
+                <a href="views/user.html" class="flex">
+                    <img src="http://placekitten.com/g/200/300" alt="" class="avatar rounded-full">
+                    <span class="capitalize">@user</span>
+
+                </a>
+                <o:avatar />
+            </sec:ifLoggedIn>
+
+
+            <!--
             <sec:ifNotLoggedIn>
                 <twitterAuth:button />
                 <button class="flex">
@@ -53,10 +55,10 @@
                 </button>
             </sec:ifNotLoggedIn>
              -->
-            
+
         </article>
-       
-        
+
+
     </nav>
     <div class="banner text-white flex">
         <img src="assets/Oscar-white.svg" alt="oscar">
@@ -64,25 +66,91 @@
             <h3 class="font-bold">Bienvenido al Oscarin</h3>
             <p class="font-semibold">Oscarin.mx es una quiniela organizada entre amigos para la entrega de los Premios Óscar 2022. Para participar, inicia sesión con tu cuenta de Twitter, selecciona tus candidatos, y no te olvides de revisar el reglamento.</p>
         </article>
-        
+
     </div>
 
-    <div>
+    <main class="mx-auto">
         <div class="large-category flex">
             <img src="assets/Oscar-black.svg" alt="">
             <h4 class="font-semibold">Large Title</h4>
         </div>
-        <div class="medium-category flex">
+        <div class="grid large-wrapper">
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">Lorem Ipsum</p>
+                </div>
+            </article>
+            <article class="large-card">
+                <img src="https://placekitten.com/200/300" alt="" class="w-full object-cover object-center">
+                <div class="flex items-center justify-center bg-white">
+                    <p class="font-semibold">The Power of The Dog</p>
+                </div>
+            </article>
+        </main>
+
+
+
+
+        <!-- <div class="medium-category flex">
             <img src="assets/Oscar-black.svg" alt="">
             <h5 class="font-semibold">Medium Title</h5>
         </div>
         <div class="small-category flex">
             <img src="assets/Oscar-black.svg" alt="">
-            <h6 class="font-semibold">Medium Title</h56
+            <h6 class="font-semibold">Medium Title</h6>
+        </div> -->
     </div>
-  
-    
+
+
 </body>
+
 </html>
-	
-		
