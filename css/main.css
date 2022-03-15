@@ -145,6 +145,7 @@ nav .avatar {
     font-size: 14px;
     text-align: center;
     width: 195px;
+    position: relative;
     /*border: 4px solid transparent;*/
 }
 
@@ -156,6 +157,16 @@ nav .avatar {
     background-color: var(--main-accent-color);
     color: white;
 }
+.large-card.active div::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 4px solid var(--main-accent-color);
+    inset: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+
 
 .large-card img {
     border-radius: 10px 10px 0 0;
