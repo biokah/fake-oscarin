@@ -274,13 +274,16 @@ footer {
 
 @media only screen and (max-width: 640px) {
     main {
+        max-width: 350px;
     }
     .large-wrapper {
         grid-template-columns: 1fr 1fr;
     }
-
     .large-card {
         max-width: 170px;
+    }
+    .large-card img {
+        height: 260px;
     }
     .medium-wrapper {
         grid-template-columns: 1fr;
@@ -288,5 +291,8 @@ footer {
     .small-wrapper {
         grid-template-columns: 1fr 1fr;
     }
-}
+    .small-card {
+        padding-left: 22px;
+        padding-right: 8px;
+    }
 }
