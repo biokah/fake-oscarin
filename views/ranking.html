@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/main.css">
+        <title>Document</title>
+    </head>
 <body>
+    <nav class="navbar flex bg-white items-center" role="navigation">
+        <a href="/">
+            <img src="../assets/Oscarin_Logo.png" alt="" class="logo">
+        </a>
+
+        <ul class="flex">
+            <li>
+                <a href="">Mi quiniela</a>
+            </li>
+            <li class="active">
+                <a href="views/ranking.html">Ranking</a>
+            </li>
+            <li>
+                <a href="../views/rules.html">Reglas</a>
+            </li>
+        </ul>
+        <article class="ml-auto flex">
+            <button class="flex share-button">
+                <img src="../assets/send.png" alt="" class="icon">   
+                <span>Compartir</span>
+            </button>
+
+            <sec:ifLoggedIn>
+                <a href="../views/user.html" class="flex">
+                    <img src="http://placekitten.com/g/200/300" alt="" class="avatar rounded-full">
+                    <span class="capitalize">@user</span>
+
+                </a>
+                <o:avatar />
+            </sec:ifLoggedIn>
+
+
+            
+            <!-- <sec:ifNotLoggedIn>
+                <twitterAuth:button />
+                <button class="flex">
+                    <img src="assets/twitter.svg" alt="" class="icon">
+                    <span>Iniciar sesión</span>
+                </button>
+            </sec:ifNotLoggedIn> -->
+            
+
+        </article>
+
+
+    </nav> 
+    <main class="ranking mx-auto">
+        <table class="bg-white mx-auto">
+            <tr>
+              <th class="font-normal text-left">
+                  <p>Nickname</p>
+                </th>
+              <th class="font-normal">Aciertos</th>
+            </tr>
+            <tr>
+                <td class="flex font-semibold">
+                    <p class="number text-center rounded-full first">1</p>
+                    <img src="http://placekitten.com/g/200/300" alt="" class="object-fit object-cover">
+                    <span>@Handle</span>
+                </td>
+              <td class="font-semibold">999</td>
+            </tr>
+            <tr>
+                <td class="flex font-semibold">
+                    <p class="number text-center rounded-full second">3</p>
+                    <img src="http://placekitten.com/g/200/300" alt="" class="object-fit object-cover">
+                    <span>@Handle</span>
+                </td>
+                <td class="font-semibold">999</td>
+            </tr>
+            <tr>
+                <td class="flex font-semibold">
+                    <p class="number text-center rounded-full third">3</p>
+                    <img src="http://placekitten.com/g/200/300" alt="" class="object-fit object-cover">
+                    <span>@Handle</span>
+                </td>
+                <td class="font-semibold">999</td>
+            </tr>
+            <tr>
+                <td class="flex font-semibold">
+                    <p class="number text-center rounded-full">4</p>
+                    <img src="http://placekitten.com/g/200/300" alt="" class="object-fit object-cover">
+                    <span>@Handle</span>
+                </td>
+                <td class="font-semibold">999</td>
+            </tr>
+          </table>
+    </main>
     
 </body>
 </html>
