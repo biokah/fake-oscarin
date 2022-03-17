@@ -17,11 +17,17 @@
     <nav class="navbar flex bg-white items-center" role="navigation">
         <a href="/">
             <img src="assets/Oscarin_Logo.png" alt="" class="logo">
+            <img src="assets/Oscar-black.svg" alt="" class="logo-mobile">
         </a>
-
-        <ul class="flex">
+        <button class="ml-8 toggle-button">
+            <span>Mi quiniela</span>
+            <img src="assets/chevron.svg" alt="" class="arrow">
+        </button>
+        <ul class="flex nav-items">
             <li class="active">
-                <a href="">Mi quiniela</a>
+                <a href="" class="flex">Mi quiniela 
+                    <img src="assets/chevron.svg" alt="" class="arrow">
+                </a>
             </li>
             <li>
                 <a href="views/ranking.html">Ranking</a>
@@ -37,7 +43,7 @@
             </button>
 
             <sec:ifLoggedIn>
-                <a href="views/user.html" class="flex">
+                <a href="views/user.html" class="flex user">
                     <img src="http://placekitten.com/g/200/300" alt="" class="avatar rounded-full">
                     <span class="capitalize">@user</span>
 
@@ -287,15 +293,30 @@
             
     </main>
 
-
-
-
-
     </div>
 
     <footer class="bg-white">
 
     </footer>
 </body>
+<script>
+    const init = () => {
+        closeMenu();
+        document.getElementsByTagName('body')[0].addEventListener('click', closeMenu);
+    }
+
+    const openMenu = (e) => {
+        e.stopPropagation()
+        document.getElementsByClassName('nav-items')[0].classList.add('expanded');
+    }
+
+    const closeMenu = () => {
+        document.getElementsByClassName('nav-items')[0].classList.remove('expanded');
+    }
+
+    document.getElementsByClassName('toggle-button')[0].addEventListener('click', openMenu);
+
+    init();
+</script>
 
 </html>

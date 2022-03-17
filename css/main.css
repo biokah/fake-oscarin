@@ -80,10 +80,27 @@ body {
     width: 168px;
 }
 
+.logo-mobile {
+    display: none;
+}
+
+.arrow {
+    display: none;
+}
+
+.toggle-button {
+    display: none;
+}
+
 .navbar li {
     border-radius: 10px;
+    display: flex;
     margin-right: 10px;
     padding: 8px 12px;
+}
+
+.navbar li a {
+    align-items: center;
 }
 
 .navbar li.active {
@@ -120,6 +137,10 @@ nav .avatar {
 
 .banner img {
     margin-right: 35px;
+}
+
+.banner p {
+    font-size: 16px;
 }
 
 .large-category {
@@ -166,7 +187,6 @@ nav .avatar {
     position: absolute;
     border-radius: 10px;
 }
-
 
 .large-card img {
     border-radius: 10px 10px 0 0;
@@ -332,12 +352,66 @@ tr {
     }
 }
 
+@media (max-width: 768px) {
+    /*mobile nav*/
+    .navbar {
+        padding: 0 18px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .arrow {
+        display: block;
+        height: 22px;
+        margin-left: 5px;
+        width: 22px;
+        transform: rotate(180deg);
+    }
+    button .arrow {
+        transform: rotate(0);
+    }
+
+    .navbar .logo, .share-button span, .user span {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        height: 32px;
+        width: 15px;
+    }
+
+    .navbar ul {
+        display: none;
+        border-radius: 10px;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        top: 10px;
+        left: 53px;
+    }
+
+    .navbar ul.expanded {
+        display: block;
+    }
+
+    .navbar ul li.active {
+        background-color: transparent;
+    }
+
+}
+
 @media only screen and (max-width: 640px) {
     main {
         max-width: 350px;
     }
     main.ranking {
         max-width: 90%;
+    }
+    .banner img {
+        display: none;
     }
     table {
         width: 100%;
