@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/main.css">
+        <title>Document</title>
+    </head>
 <body>
-    rules
+    <nav class="navbar flex bg-white items-center" role="navigation">
+        <a href="/">
+            <img src="../assets/Oscarin_Logo.png" alt="" class="logo">
+        </a>
+
+        <ul class="flex">
+            <li>
+                <a href="">Mi quiniela</a>
+            </li>
+            <li>
+                <a href="../views/ranking.html">Ranking</a>
+            </li>
+            <li class="active">
+                <a href="../views/rules.html">Reglas</a>
+            </li>
+        </ul>
+        <article class="ml-auto flex">
+            <button class="flex share-button">
+                <img src="../assets/send.png" alt="" class="icon">   
+                <span>Compartir</span>
+            </button>
+
+            <sec:ifLoggedIn>
+                <a href="../views/user.html" class="flex">
+                    <img src="http://placekitten.com/g/200/300" alt="" class="avatar rounded-full">
+                    <span class="capitalize">@user</span>
+
+                </a>
+                <o:avatar />
+            </sec:ifLoggedIn>
+
+
+            
+            <!-- <sec:ifNotLoggedIn>
+                <twitterAuth:button />
+                <button class="flex">
+                    <img src="assets/twitter.svg" alt="" class="icon">
+                    <span>Iniciar sesión</span>
+                </button>
+            </sec:ifNotLoggedIn> -->
+            
+
+        </article>
+
+
+    </nav> 
+    <main class="ranking mx-auto">
+        <article class="flex page-title">
+            <img src="../assets/rules.svg" alt="">
+            <h1>Reglas del Oscarin</h1>
+        </article>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia earum minima cumque accusamus rem perspiciatis perferendis sint ut ad totam autem magni, quisquam officiis ipsam dolorum explicabo consequatur quia obcaecati!
+    </main>
+    
 </body>
 </html>
