@@ -356,8 +356,13 @@ tr {
     .medium-wrapper {
         grid-template-columns: 1fr 1fr;
     }
+    .medium-category {
+        margin-top: 15px;
+    }
+
     .small-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
     }
 }
 
@@ -408,6 +413,10 @@ tr {
 
     .navbar ul li.active {
         background-color: transparent;
+    }
+
+    .navbar .share-button {
+        margin-right: 15px;
     }
 
 }
