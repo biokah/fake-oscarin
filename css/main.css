@@ -282,6 +282,10 @@ footer {
 
 .small-card p {
     line-height: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .small-card p:nth-child(2) {
@@ -449,9 +453,12 @@ tr {
     }
     .small-wrapper {
         grid-template-columns: 1fr 1fr;
+        
     }
     .small-card {
         padding-left: 22px;
         padding-right: 8px;
+       
     }
+  
 }
